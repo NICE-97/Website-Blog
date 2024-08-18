@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+
+.s-4 {
+    background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+
+.scaleimg:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.videosbg{
+  background-color: #16161a;
+}
+
+.footerbg{
+  background-color: #1f1e1e;
+}
+
+.btncolormain{
+  background-color: #2e2d2d;
+}
+
+.iconfooter{
+  background-color: rgba(114, 114, 114, 0.1);
+}
+
+.hover-icon-ins :hover{ 
+  background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+
+.stories a li{
+  margin-top: 5px;
+}
+
+.translatex li:hover{
+  transition: 0.5s;
+  transform: translateX(10px);
+}
+
+.iconfacebookbg{
+  background-color: #254c94;
+}
+
+.iconfacebook{
+  color: #254c94;
+}
+
