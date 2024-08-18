@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from 'react'
+import React, { useState }  from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Features from './pages/Features'
 import Home from './pages/Home'
@@ -12,14 +12,11 @@ import Topweb from './components/Topweb'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Lastfooter from './components/Lastfooter'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   const [isToggled, setIsToggled] = useState(false);
-  const [show, setShow] = useState('hidden');
-
-  useEffect(() => {
-    
-  },[])
+  const [show, setShow] = useState('');
 
   const togglebtn = () => {
     setIsToggled(prevState => !prevState);
@@ -38,7 +35,8 @@ function App() {
         <Topweb/>
         <div className='sticky top-0 left-0 right-0 z-10'>
           <Header togglebtn={togglebtn}/>
-      </div> 
+      </div>
+      <ScrollToTop />
       <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/features' element={<Features/>}/>
