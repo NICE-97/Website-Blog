@@ -1,5 +1,5 @@
-import React, { useState }  from "react";
-import DataWorldNews from '../data/DataWorldNews'
+import React, { useState } from "react";
+import DataWorldNews from "../data/DataWorldNews";
 
 function Worldnews() {
   const [worldNews, setWorldNews] = useState(DataWorldNews);
@@ -33,8 +33,11 @@ function Worldnews() {
           </div>
           <div className="grid gap-2">
             {worldNews.map((items, index) => {
-              return(
-                <div key={index} className="container mx-auto grid grid-cols-8 gap-2 hover:text-orange-500">
+              return (
+                <div
+                  key={index}
+                  className="container mx-auto grid grid-cols-8 gap-2 hover:text-orange-500"
+                >
                   <div className="overflow-hidden scaleimg bg-red-500 col-span-2 md:col-span-3">
                     <img
                       className="w-full h-full object-cover object-center"
@@ -43,13 +46,11 @@ function Worldnews() {
                     />
                   </div>
                   <div className="p-2 col-start-3 col-span-8 md:col-start-4 md:col-span-8">
-                    <h3 className="font-bold text-sm">
-                      {items.title}
-                    </h3>
+                    <h3 className="font-bold text-sm">{items.title}</h3>
                     <p className="text-sm text-gray-400">{items.date}</p>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>

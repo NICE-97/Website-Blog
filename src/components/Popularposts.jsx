@@ -12,13 +12,13 @@ function Popularposts() {
           <div className="bg-gray-200 my-2 mr-4 h-1  w-full"></div>
         </div>
         <div className="px-4 w-full">
-            <div className="overflow-hidden scaleimg h-52 sm:h-60 md:h-80 lg:h-40">
-              <img
-                className="w-full h-full object-cover object-center"
-                src="https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvbXB1dGVyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-            </div>
+          <div className="overflow-hidden scaleimg h-52 sm:h-60 md:h-80 lg:h-40">
+            <img
+              className="w-full h-full object-cover object-center"
+              src="https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvbXB1dGVyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
         </div>
         <div className="grid grid-cols-1 p-4 w-full">
           <div className="flex hover:text-orange-500">

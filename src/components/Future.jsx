@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import DataFuture from '../data/DataFuture'
+import React, { useState } from "react";
+import DataFuture from "../data/DataFuture";
 
 function Future() {
-  const [future, setFuture] = useState(DataFuture)
+  const [future, setFuture] = useState(DataFuture);
 
   return (
     <div className="container flex mx-auto mt-5">
@@ -28,37 +28,42 @@ function Future() {
                   GADGETS
                 </div>
                 <h3 className="text-white font-bold">
-                    AI Assists Doctors In Interpreting Skin Conditions
+                  AI Assists Doctors In Interpreting Skin Conditions
                 </h3>
                 <p className="text-gray-300">July 31, 2021</p>
               </div>
             </div>
           </div>
-        <div className='grid gap-5'>
-            {future.map((items, index)=>{
-                return(
-                    <div key={index} className={`container mx-auto grid grid-cols-8  hover:text-orange-500 ${index === 0 ? 'mt-3' : ''}`}>
-                        <div className="overflow-hidden scaleimg bg-red-500 col-span-2 md:col-span-3">
-                            <img
-                            className="w-full h-full object-cover object-center"
-                            src={items.imag}
-                            alt=""
-                            />
-                        </div>
-                        <div className="p-2 col-start-3 col-span-5 md:col-start-4 md:col-span-4">
-                            <h3 className="font-bold text-sm">
-                            Start a Digital Marketing Website for your Service
-                            </h3>
-                            <p className="text-sm text-gray-400">July 31, 2021</p>
-                        </div>
-                    </div>
-                )
+          <div className="grid gap-5">
+            {future.map((items, index) => {
+              return (
+                <div
+                  key={index}
+                  className={`container mx-auto grid grid-cols-8  hover:text-orange-500 ${
+                    index === 0 ? "mt-3" : ""
+                  }`}
+                >
+                  <div className="overflow-hidden scaleimg bg-red-500 col-span-2 md:col-span-3">
+                    <img
+                      className="w-full h-full object-cover object-center"
+                      src={items.imag}
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-2 col-start-3 col-span-5 md:col-start-4 md:col-span-4">
+                    <h3 className="font-bold text-sm">
+                      Start a Digital Marketing Website for your Service
+                    </h3>
+                    <p className="text-sm text-gray-400">July 31, 2021</p>
+                  </div>
+                </div>
+              );
             })}
-        </div>
+          </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Future
+export default Future;

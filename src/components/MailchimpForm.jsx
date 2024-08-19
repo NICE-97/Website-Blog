@@ -26,5 +26,3 @@ function MailchimpForm() {
 }
 
 export default MailchimpForm;
-
-// border-2 border-slate-200 text-sm w-full py-1 px-2 focus:border-sky-500 focus:ring-sky-500
